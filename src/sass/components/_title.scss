@@ -1,0 +1,18 @@
+.title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+
+  margin-top: 28px;
+
+  @media screen and (min-width: $desktop) {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+
+    color: var(--color-text-primary);
+
+    margin-top: 71px;
+  }
+}

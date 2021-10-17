@@ -1,0 +1,32 @@
+/* Light */
+
+@font-face {
+  font-family: "StyreneAWeb";
+  src: local("StyreneAWeb"), url("StyreneAWeb-Light.ttf") format("truetype"),
+    url("StyreneAWeb-Light.eot?#iefix") format("embedded-opentype"),
+    url("StyreneAWeb-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Medium */
+
+@font-face {
+  font-family: "StyreneAWeb";
+  src: local("StyreneAWeb"), url("StyreneAWeb-Medium.ttf") format("truetype"),
+    url("StyreneAWeb-Medium.eot?#iefix") format("embedded-opentype"),
+    url("StyreneAWeb-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Bold */
+
+@font-face {
+  font-family: "StyreneAWeb";
+  src: local("StyreneAWeb"), url("StyreneAWeb-Bold.ttf") format("truetype"),
+    url("StyreneAWeb-Bold.eot?#iefix") format("embedded-opentype"),
+    url("StyreneAWeb-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

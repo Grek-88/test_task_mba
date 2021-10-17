@@ -1,0 +1,31 @@
+.programs {
+  margin-top: 34px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 31px;
+
+    margin-top: 89px;
+  }
+
+  .program {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: var(--color-text-primary);
+
+    &:not(:first-child) {
+      margin-top: 26px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 26px;
+      line-height: 31px;
+
+      &:not(:first-child) {
+        margin-top: 68px;
+      }
+    }
+  }
+}

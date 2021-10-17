@@ -1,0 +1,115 @@
+.aside {
+  margin-top: 44px;
+  margin-bottom: 47px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 131px;
+    margin-bottom: 171px;
+  }
+}
+
+.asideList {
+  .asideItem {
+    color: var(--color-text-accent);
+    background-color: var(--color-accent);
+
+    &:not(:first-child) {
+      margin-top: 23px;
+    }
+
+    &:nth-child(2n) {
+      background-color: var(--color-bg-aside);
+
+      @media screen and (min-width: $desktop) {
+        .itemTitle {
+          padding-top: 52px;
+          padding-left: 57px;
+        }
+      }
+    }
+
+    .itemTitle {
+      color: inherit;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 30px;
+
+      padding-top: 31px;
+      text-align: center;
+
+      @media screen and (min-width: $desktop) {
+        font-size: 36px;
+        line-height: 43px;
+        padding-top: 56px;
+        padding-left: 71px;
+        text-align: start;
+      }
+    }
+
+    .itemText {
+      color: inherit;
+      font-size: 20px;
+      line-height: 26px;
+
+      margin-top: 25px;
+      margin-left: 22px;
+      margin-right: 23px;
+      padding-bottom: 41px;
+
+      @media screen and (min-width: $desktop) {
+        width: 496px;
+        margin-top: 24px;
+        margin-left: 72px;
+        padding: 0 33px 0 0;
+      }
+    }
+
+    .itemList {
+      color: inherit;
+      padding-bottom: 62px;
+
+      .itemListText {
+        color: inherit;
+        list-style-type: disc;
+
+        margin-top: 22px;
+        margin-left: 42px;
+        padding: 0;
+
+        &:not(:first-child) {
+          margin-top: 15px;
+        }
+
+        &::marker {
+          font-size: 0.7em;
+          color: var(--color-accent);
+        }
+
+        @media screen and (min-width: $desktop) {
+          margin-top: 25px;
+          margin-left: 77px;
+
+          &:not(:first-child) {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 628px;
+      height: 293px;
+
+      &:not(:first-child) {
+        margin-top: 0;
+        margin-left: 30px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: -14px;
+    margin-right: -16px;
+  }
+}

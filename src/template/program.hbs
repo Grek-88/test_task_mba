@@ -1,0 +1,49 @@
+{{#each this}}
+  <li class="program">
+    {{this.title}}
+    <article class="article">
+      <h4 class="module">1 модуль</h4>
+      <ul class="specSub">
+        {{#each this.specializedSubjects}}
+          <li class="itemSub">{{this}}</li>
+        {{/each}}
+      </ul>
+      <h4 class="module">2 модуль</h4>
+      <ul class="specSub">
+        {{#each this.specializedSubjects}}
+          <li class="itemSub itemSubSecond">{{this}}</li>
+        {{/each}}
+      </ul>
+    </article>
+  </li>
+{{/each}}
+
+{{! Проще и немного выгоднее по производительности было бы вот как ниже, но кода больше и загромождение }}
+{{!-- {{#each this}}
+  <li>
+    {{this.title}}
+    <ul>
+      <li>
+        1 модуль
+        <ul>
+          <li>{{this.specializedSubjects.[0]}}</li>
+          <li>{{this.specializedSubjects.[1]}}</li>
+          <li>{{this.specializedSubjects.[2]}}</li>
+          <li>{{this.specializedSubjects.[3]}}</li>
+          <li>{{this.specializedSubjects.[4]}}</li>
+
+        </ul>
+      </li>
+      <li>
+        2 модуль
+        <ul>
+          <li>{{this.specializedSubjects.[5]}}</li>
+          <li>{{this.specializedSubjects.[6]}}</li>
+          <li>{{this.specializedSubjects.[7]}}</li>
+          <li>{{this.specializedSubjects.[8]}}</li>
+          <li>{{this.specializedSubjects.[9]}}</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+{{/each}}; --}}

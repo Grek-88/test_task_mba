@@ -1,0 +1,25 @@
+* {
+  font-family: "StyreneAWeb";
+  font-style: normal;
+  font-weight: 300;
+
+  margin: 0;
+  padding: 0;
+
+  color: var(--color-text);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding: 0 93px 0 91px;
+  }
+}
+
+li {
+  list-style: none;
+}
